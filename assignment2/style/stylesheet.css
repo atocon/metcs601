@@ -20,17 +20,24 @@ h1 {
     background-color: var(--united-nations-blue);
     color: var(--black-coffee);
     position: relative;
-    padding-top: 2.0rem;
+    padding-top: 2.5rem;
     padding-left: 4.0rem;
-    padding-bottom: 1.0rem;
+    padding-bottom: 2.0rem;
     border: 0.0rem;
     margin: 0.0rem;
     top: 0.0rem;
-    
+}
+h2 {
+    font-size: 2rem;
+    color: var(--black-coffee);
+    position: relative;
+    padding-left: 6.0rem;
+    padding-top: 2.0rem;
+    margin: 0rem;
 }
 nav {
     position: absolute;
-    top: 3.0rem;
+    top: 3.5rem;
     margin-left: 26.0rem;
     padding: 0.0;
 }
@@ -45,11 +52,84 @@ nav>a {
     padding-bottom: 0.25rem;
     text-decoration: none;
 }
+p {
+    font-size: 1.25rem;
+    padding: 1.0rem;
+}
+p.rightlevel2 {
+    margin-left: 36.0rem;
+    margin-right: 3.0rem;
+    padding-top: 0.5rem;
+}
 img {
     max-width: 100%;
     height: auto;
-  }
-#indexfigure {
-    position: relative;
-    margin-left: 4.0rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1,0rem;
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
+    border-radius: 2.0rem;
 }
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.floatleftlevel2 {
+    float: left;
+    margin-left: 5.5rem;
+    padding-top: 0.0rem;
+    padding-right: 1.0rem;
+    border: 0.0rem;
+}
+figcaption.floatleftlevel2 {
+    float: left;
+    clear: both;
+    margin-left: 11.5rem;
+}
+figcaption {
+    color: var(--black-coffee);
+    position: relative;
+    bottom: 0.5rem;
+}
+figcaption.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+/*
+#indeximage {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.0rem;
+    border-radius: 2.0rem;
+    scale: 90%;
+  }
+  #indexfigurecaption {
+    color: var(--black-coffee);
+    position: relative;
+    bottom: 1.25rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.0rem;
+    padding-top: 0.0rem;
+    border: 0.0rem;
+    text-align: center;
+}
+#aboutmeimage {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin-left: 3.5rem;
+    border-radius: 2.0rem;
+}*/
