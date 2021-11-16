@@ -82,6 +82,7 @@ article.light{
 }
 article.dark {
     background-color: var(--black-coffee);
+    color: var(--cultured);
     padding: 1.0rem
 }
 img {
@@ -105,7 +106,13 @@ img.center {
     float: left;
     margin: 1rem 0rem 0rem 0.5rem;
     padding: 0rem 0rem 0rem 0rem;
-    border: 0rem;
+    border-radius: 50rem;
+}
+#computerimage {
+    position: relative;
+    margin: 1rem 0rem 0rem 0.5rem;
+    padding: 0rem 0rem 0rem 0rem;
+    border-radius: 2rem;
 }
 figcaption {
     margin: 0rem;
@@ -127,6 +134,11 @@ figcaption.center {
     float: left;
     clear: both;
     margin: 1rem 0rem 0rem 3rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+#computercaption {
+    position: relative;
+    margin: 1rem 0rem 0rem 8.5rem;
     padding: 0rem 0rem 0rem 0rem;
 }
 table {
@@ -151,6 +163,14 @@ td {
     padding-top: 1rem;
 }
 ol {
+    font-size: 1.25rem;
+    position: relative;
+    margin: 0rem 0rem 0rem 3rem;
+    padding: 0rem 0rem 0rem 0rem;
+    list-style-position: inside;
+}
+ul {
+    font-size: 1.25rem;
     position: relative;
     margin: 0rem 0rem 0rem 3rem;
     padding: 0rem 0rem 0rem 0rem;
@@ -158,4 +178,10 @@ ol {
 }
 li{
     padding: 0.25rem 0rem 0.25rem 0rem;
+}
+iframe {
+    position: relative;
+    border: none;
+    margin: 0rem 0rem 0rem 3rem;
+    padding: 0rem 0rem 0rem 0rem;
 }
