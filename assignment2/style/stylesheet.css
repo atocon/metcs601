@@ -185,3 +185,92 @@ iframe {
     margin: 0rem 0rem 0rem 3rem;
     padding: 0rem 0rem 0rem 0rem;
 }
+@media (max-width: 1024px) {
+    nav {
+        background-color: var(--united-nations-blue);
+        position: absolute;
+        margin: 2rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    nav>a {
+        position: relative;
+        display: block;
+        font-size: 1.5rem;
+        padding: 0rem 1.5rem 0rem 1.0rem;
+        text-decoration: none;
+    }
+    h1 {
+        font-size: 3rem;
+        background-color: var(--united-nations-blue);
+        color: var(--black-coffee);
+        position: relative;
+        padding: 1rem 0rem 3rem 1rem;
+        border: 0rem;
+        margin: 0rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+        color: var(--silver-metallic);
+        background-color: var(--black-coffee);
+        position: relative;
+        padding: 1rem 0rem 0rem 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        color: var(--united-nations-blue);
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 3rem;
+    }
+    h4 {
+        font-size: 1.0rem;
+        padding: 0rem 0rem 0rem 3rem;
+        margin:inherit
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.10rem;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    ol {
+        font-size: 1rem;
+        position: relative;
+        margin: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 0rem;
+        list-style-position: inside;
+    }
+    ul {
+        font-size: 1rem;
+        position: relative;
+        margin: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 0rem;
+        list-style-position: inside;
+    }
+    li{
+        padding: 0.10rem 0rem 0.10rem 0rem;
+    }
+      table {
+        width: 30rem;
+        margin-left: 30rem;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    th {
+        text-align: left;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    td {
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid black;
+    } 
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 640px) {
+
+}
