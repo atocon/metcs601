@@ -422,7 +422,7 @@ iframe {
     }
     p.floatright {
         position: absolute;
-        margin: 47rem 0rem 0rem 0rem;
+        margin: 39rem 0rem 0rem 0rem;
         padding: 0rem 3rem 3rem 3rem;
     }
     ol {
@@ -443,15 +443,22 @@ iframe {
         padding: 0.10rem 0rem 0.10rem 0rem;
     }
     #cookingimage {
-        float: left;
+        position: static;
         margin: 0rem 0rem 0rem 0rem;
         padding: 0rem 0rem 0rem 0rem;
         border-radius: 50rem;
-        scale: 70%;
+        scale: 100%;
+    }
+    #cookingcaption {
+        float: left;
+        clear: both;
+        margin: 1rem 0rem 1rem 3rem;
+        padding: 0rem 0rem 0rem 0rem;
     }
     table {
-        width: 23rem;
-        margin: 0rem;
+        position: static;
+        width: 30rem;
+        margin: 0rem 0rem 0rem 3rem;
         table-layout: fixed;
         border-collapse: collapse;
         border: 1px solid black;
@@ -474,7 +481,24 @@ iframe {
         margin-right: auto;
     }
     #aboutmecaption {
-        margin: 1rem 0rem 0rem 14rem;
+        margin: 1rem 0rem 0rem 10rem;
         padding: 0rem 0rem 0rem 0rem;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        padding: 0rem;
+        border-radius: 2.0rem;
+    }
+    img.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figcaption.center {
+        padding-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 }
