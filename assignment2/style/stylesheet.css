@@ -213,7 +213,7 @@ iframe {
         color: var(--silver-metallic);
         background-color: var(--black-coffee);
         position: relative;
-        padding: 1rem 0rem 0rem 1rem;
+        padding: 1rem 0rem 1rem 1rem;
         margin: 0rem 0rem 0rem 0rem;
     }
     h3 {
@@ -269,8 +269,212 @@ iframe {
     } 
 }
 @media (max-width: 768px) {
-
+    nav {
+        background-color: var(--united-nations-blue);
+        position: absolute;
+        margin: 2rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    nav>a {
+        position: relative;
+        display: block;
+        font-size: 1.5rem;
+        padding: 0rem 1.5rem 0rem 1.0rem;
+        text-decoration: none;
+    }
+    h1 {
+        font-size: 3rem;
+        background-color: var(--united-nations-blue);
+        color: var(--black-coffee);
+        position: relative;
+        padding: 1rem 0rem 3rem 1rem;
+        border: 0rem;
+        margin: 0rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+        color: var(--silver-metallic);
+        background-color: var(--black-coffee);
+        position: relative;
+        padding: 1rem 0rem 1rem 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        color: var(--united-nations-blue);
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 3rem;
+    }
+    h4 {
+        font-size: 1.0rem;
+        padding: 0rem 0rem 0rem 3rem;
+        margin:inherit
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.10rem;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    p.floatright {
+        position: absolute;
+        margin: 47rem 0rem 0rem 0rem;
+        padding: 0rem 3rem 3rem 3rem;
+    }
+    ol {
+        font-size: 1rem;
+        position: relative;
+        margin: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 0rem;
+        list-style-position: inside;
+    }
+    ul {
+        font-size: 1rem;
+        position: relative;
+        margin: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 0rem;
+        list-style-position: inside;
+    }
+    li{
+        padding: 0.10rem 0rem 0.10rem 0rem;
+    }
+    #cookingimage {
+        float: left;
+        margin: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
+        border-radius: 50rem;
+        scale: 70%;
+    }
+    table {
+        width: 23rem;
+        margin: 0rem;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    th {
+        text-align: left;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    td {
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid black;
+    } 
+    #aboutmeimage {
+        display: block;
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #aboutmecaption {
+        margin: 1rem 0rem 0rem 14rem;
+        padding: 0rem 0rem 0rem 0rem;
+    }
 }
 @media (max-width: 640px) {
-
+    nav {
+        background-color: var(--united-nations-blue);
+        position: absolute;
+        margin: 2rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    nav>a {
+        position: relative;
+        display: block;
+        font-size: 1.5rem;
+        padding: 0rem 1.5rem 0rem 1.0rem;
+        text-decoration: none;
+    }
+    h1 {
+        font-size: 3rem;
+        background-color: var(--united-nations-blue);
+        color: var(--black-coffee);
+        position: relative;
+        padding: 1rem 0rem 3rem 1rem;
+        border: 0rem;
+        margin: 0rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+        color: var(--silver-metallic);
+        background-color: var(--black-coffee);
+        position: relative;
+        padding: 1rem 0rem 1rem 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        color: var(--united-nations-blue);
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 3rem;
+    }
+    h4 {
+        font-size: 1.0rem;
+        padding: 0rem 0rem 0rem 3rem;
+        margin:inherit
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.10rem;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    p.floatright {
+        position: absolute;
+        margin: 47rem 0rem 0rem 0rem;
+        padding: 0rem 3rem 3rem 3rem;
+    }
+    ol {
+        font-size: 1rem;
+        position: relative;
+        margin: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 0rem;
+        list-style-position: inside;
+    }
+    ul {
+        font-size: 1rem;
+        position: relative;
+        margin: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 0rem;
+        list-style-position: inside;
+    }
+    li{
+        padding: 0.10rem 0rem 0.10rem 0rem;
+    }
+    #cookingimage {
+        float: left;
+        margin: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
+        border-radius: 50rem;
+        scale: 70%;
+    }
+    table {
+        width: 23rem;
+        margin: 0rem;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    th {
+        text-align: left;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    td {
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid black;
+    } 
+    #aboutmeimage {
+        display: block;
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #aboutmecaption {
+        margin: 1rem 0rem 0rem 14rem;
+        padding: 0rem 0rem 0rem 0rem;
+    }
 }
