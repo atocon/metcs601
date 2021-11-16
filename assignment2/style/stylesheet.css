@@ -15,7 +15,7 @@ body {
     color: var(--black-coffee);
     margin: 0rem;
     padding: 0rem;
-    border 0rem;
+    border: 0rem;
 }
 nav {
     position: absolute;
