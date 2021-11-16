@@ -17,29 +17,6 @@ body {
     padding: 0rem;
     border 0rem;
 }
-h1 {
-    font-size: 4rem;
-    background-color: var(--united-nations-blue);
-    color: var(--black-coffee);
-    position: relative;
-    padding: 1rem 0rem 1rem 4rem;
-    border: 0rem;
-    margin: 0rem;
-}
-h2 {
-    font-size: 3rem;
-    color: var(--united-nations-blue);
-    background-color: var(--black-coffee);
-    position: relative;
-    padding: 1rem 0rem 1rem 4rem;
-    margin: 0rem 63rem 0rem 0rem;
-}
-h3 {
-    position: relative;
-    font-size: 1.75rem;
-    color: var(--united-nations-blue);
-    margin-left: 5.0rem;
-}
 nav {
     position: absolute;
     top: 3.0rem;
@@ -53,6 +30,48 @@ nav>a {
     padding: 0rem 1.5rem 0rem 1.5rem;
     text-decoration: none;
 }
+h1 {
+    font-size: 4rem;
+    background-color: var(--united-nations-blue);
+    color: var(--black-coffee);
+    position: relative;
+    padding: 1rem 0rem 1rem 4rem;
+    border: 0rem;
+    margin: 0rem;
+}
+h2 {
+    font-size: 3rem;
+    color: var(--silver-metallic);
+    background-color: var(--black-coffee);
+    position: relative;
+    padding: 1rem 0rem 1rem 4rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+h3 {
+    font-size: 1.75rem;
+    color: var(--united-nations-blue);
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 3rem;
+}
+h4 {
+    font-size: 1.15rem;
+    padding: 0rem 0rem 0rem 3rem;
+    margin:inherit
+}
+p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 0rem 0rem 0rem 0rem;
+}
+p.indent {
+    margin-left: 0.0rem;
+    padding: 0.0rem 0.0rem 0.0rem 3.0rem;
+}
+p.floatright {
+    margin-left: 34.0rem;
+    margin-right: 3.0rem;
+    padding-top: 0.5rem;
+}
 article {
     background-color: var(--cultured);
     margin: 0.0rem;
@@ -65,19 +84,6 @@ article.dark {
     background-color: var(--black-coffee);
     padding: 1.0rem
 }
-p {
-    font-size: 1.25rem;
-    padding: 1.0rem;
-}
-p.level2 {
-    margin-left: 5.0rem;
-    padding: 0.0rem 1.0rem 0.0rem 1.0rem;
-}
-p.floatright {
-    margin-left: 34.0rem;
-    margin-right: 3.0rem;
-    padding-top: 0.5rem;
-}
 img {
     max-width: 100%;
     height: auto;
@@ -89,17 +95,17 @@ img.center {
     margin-left: auto;
     margin-right: auto;
 }
-img.floatleft {
+#aboutmeimage {
     float: left;
-    margin-left: 3.5rem;
-    padding-top: 0.0rem;
-    padding-right: 1.0rem;
-    border: 0.0rem;
+    margin: 1rem 0rem 0rem 1rem;
+    padding: 0rem 0rem 0rem 0rem;
+    border: 0rem;
 }
-figcaption.floatleft {
+#cookingimage {
     float: left;
-    clear: both;
-    margin-left: 3.5rem;
+    margin: 1rem 0rem 0rem 0.5rem;
+    padding: 0rem 0rem 0rem 0rem;
+    border: 0rem;
 }
 figcaption {
     margin: 0rem;
@@ -110,4 +116,46 @@ figcaption.center {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+#aboutmecaption {
+    float: left;
+    clear: both;
+    margin: 1rem 0rem 0rem 6rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+#cookingcaption {
+    float: left;
+    clear: both;
+    margin: 1rem 0rem 0rem 3rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+table {
+    width: 40rem;
+    margin-left: 30rem;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th {
+    text-align: left;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+td {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+#extratoppadding {
+    padding-top: 1rem;
+}
+ol {
+    position: relative;
+    margin: 0rem 0rem 0rem 3rem;
+    padding: 0rem 0rem 0rem 0rem;
+    list-style-position: inside;
+}
+li{
+    padding: 0.25rem 0rem 0.25rem 0rem;
 }
