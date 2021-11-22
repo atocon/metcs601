@@ -1,0 +1,37 @@
+:root {
+/* CSS HEX */
+/* CSS HEX */
+--black-coral: #495867ff;
+--blue-yonder: #577399ff;
+--beau-blue: #bdd5eaff;
+--ghost-white: #f7f7ffff;
+--orange-red-crayola: #fe5f55ff;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: var(--ghost-white);
+    color: var(--black-coral);
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+h1 {
+    font-size: 3rem;
+    background-color: var(--beau-blue);
+    color: var(--orange-red-crayola);
+    padding: 1rem;
+    margin: 5rem 40rem 0rem 40rem;
+    border: 0.15rem solid var(--blue-yonder);
+    text-align: center;
+}
+button {
+    display: block;
+    background-color: var(--black-coral);
+    color: var(--ghost-white);
+    border: 0.15rem solid var(--orange-red-crayola);
+    width: 20rem;
+    margin: 2rem auto 2rem auto;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
