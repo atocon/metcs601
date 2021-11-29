@@ -1,11 +1,3 @@
-function validateForm() {
-    let firstName = document.getElementById("firstName");
-    let lastName = document.getElementById("lastName");
-    validateName(firstName);
-    validateName(lastName);
-    validateFacilitators();
-}
-
 function validateName(name) {
     let name = name;
     let alpha = /^[A-Za-z]+$/;
@@ -23,7 +15,7 @@ function validateName(name) {
     }
 }
 
-function validateFacilitators() {
+function validateFacilitator() {
     let facilitator = document.getElementById("Facilitator");
     if (facilitator === "Josh" || "Chris" || "Fazil" || "Christian") {
         return true;
@@ -32,4 +24,12 @@ function validateFacilitators() {
         facilitator.focus();
         return false;
     }
+}
+
+function validateForm() {
+    let firstName = document.getElementById("firstName");
+    let lastName = document.getElementById("lastName");
+    validateName(firstName);
+    validateName(lastName);
+    validateFacilitator();
 }
