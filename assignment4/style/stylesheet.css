@@ -1,0 +1,35 @@
+:root {
+    /* CSS HEX */
+    --prussian-blue: #002642ff;
+    --claret: #840032ff;
+    --gamboge: #e59500ff;
+    --gainsboro: #e5dadaff;
+    --rich-black-fogra-29: #02040fff;
+    }
+    section {
+        display: block;
+        max-width: 60rem;
+        height: auto;
+        margin: 5rem auto 0rem auto;
+        padding: 10rem 0rem 10rem 0rem;
+        background-image: url("../images/cuisinetable.jpeg");
+        background-repeat: no-repeat;
+        
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        background-color: var(--gamboge);
+        color: var(--rich-black-fogra-29);
+        margin: 0rem;
+        padding: 0rem;
+        border: 0rem;
+    }
+    form {
+        display: block;
+        background-color: var(--gainsboro);
+        color: var(--prussian-blue);
+        margin: 0rem auto 0rem auto;
+        padding: 1rem 1rem 1rem 1rem;
+        max-width: 35rem;
+    }
