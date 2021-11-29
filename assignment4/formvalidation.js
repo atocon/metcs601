@@ -8,13 +8,13 @@ function validateForm() {
 
 function validateName(name) {
     let name = name;
-    let alphaNum = /^[A-Za-z]+$/;
+    let alpha = /^[A-Za-z]+$/;
     if (name.value.length <= 2) {
         alert("Error: The entered name must contain two (2) or more characters.")
         name.focus();
         return false;
     } 
-    if (!name.value.match(alphaNum)) {
+    if (!name.value.match(alpha)) {
         alert("Error: The entered name must only contain alphanumeric characters.");
         name.focus();
         return false;
