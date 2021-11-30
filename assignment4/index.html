@@ -10,34 +10,35 @@
 </head>
 <body>
     <section>
-        <form id="cuisineForm">
+        <form id="cuisineForm" novalidate>
             <h1>Cuisine Form</h1>
-            <label for="firstName">First Name:</label>
+            <label id="name" for="firstName">First Name:</label>
             <input type="text" name="firstName" id="firstName" required>
-            <br>
-            <label for="lastName">Last Name:</label>
+            <p><span id=firstNameError></span></p>
+            <label id="name" for="lastName">Last Name:</label>
             <input type="text" name="lastName" id="lastName" required>
-            <br>
-            <label>Facilitator's First Name:</label>
+            <p><span id=lastNameError></span></p>
+            <label id="name" for="facilitatorName">Facilitator's First Name:</label>
             <input type="text" name="facilitator" id="facilitator" required>
-            <p>Select your favorite cuisine(s):</p>
-            <p>
-                <input type="checkbox" name="cbCuisine1" value="american"> American
-                <input type="checkbox" name="cbCuisine2" value="mexican"> Mexican
+            <p><span id=facilitatorNameError></span></p>
+            <fieldset>
+                <legend>Select your favorite cuisine(s):</legend>
+                <input type="checkbox" name="cbCuisine1" value="american"> American <br/>
+                <input type="checkbox" name="cbCuisine2" value="mexican"> Mexican <br/>
                 <input type="checkbox" name="cbCuisine3" value="greek"> Greek <br/>
-                <input type="checkbox" name="cbCuisine4" value="indian"> Indian
-                <input type="checkbox" name="cbCuisine5" value="japanese"> Japanese
+                <input type="checkbox" name="cbCuisine4" value="indian"> Indian <br/>
+                <input type="checkbox" name="cbCuisine5" value="japanese"> Japanese <br/>
                 <input type="checkbox" name="cbCuisine6" value="spanish"> Spanish <br/>
-                <input type="checkbox" name="cbCuisine7" value="french"> French
-                <input type="checkbox" name="cbCuisine8" value="chinese"> Chinese
+                <input type="checkbox" name="cbCuisine7" value="french "> French <br/>
+                <input type="checkbox" name="cbCuisine8" value="chinese"> Chinese <br/>
                 <input type="checkbox" name="cbCuisine9" value="italian"> Italian
-            </p>
-            <p>Select your preferred meal preparation method:</p>
-            <p>
-                <input type="radio" name="prepButton" value="home-cooked"> Home-cooked
-                <input type="radio" name="prepButton" value="dineout"> Restaurant Dine-in
+            </fieldset>
+            <fieldset>
+                <legend>Select your preferred meal preparation method:</legend>
+                <input type="radio" name="prepButton" value="home-cooked"> Home-cooked <br/>
+                <input type="radio" name="prepButton" value="dineout"> Restaurant Dine-in <br/>
                 <input type="radio" name="prepButton" value="radioButton3"> Restaurant Take-out
-            </p>
+            </fieldset>
             <button>Submit</button>
         </form>
     </section>
