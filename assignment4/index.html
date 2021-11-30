@@ -6,21 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuisine Form</title>
     <link href="style/stylesheet.css" rel="stylesheet">
+    <!--JavaScript file linked and its processing is delayed using the "defer" attribute.-->
     <script src="validation.js" defer></script>
 </head>
 <body>
+    <!--Section used as the box to house the background image which the form is overlayed on-->
     <section>
+        <!--Form is created with attributes that point to the given server via the post method-->
         <form id="cuisineForm" name="cuisineForm" action="https://bucs601.com/submit.php" method="post" novalidate>
             <h1>Cuisine Form</h1>
+            <!--Label and input box for the user to enter thier first name-->
             <label for="firstName">First Name:</label>
             <input type="text" name="firstName" id="firstName" required>
+            <!--Placeholder where an error message can be written to if necessary-->
             <p><span id=firstNameError></span></p>
+            <!--Label and input box for the user to enter thier last name-->
             <label for="lastName">Last Name:</label>
             <input type="text" name="lastName" id="lastName" required>
+            <!--Placeholder where an error message can be written to if necessary-->
             <p><span id=lastNameError></span></p>
+            <!--Label and input box for the user to enter thier facilitator's first name-->
             <label for="facilitator">Facilitator's First Name:</label>
             <input type="text" name="facilitator" id="facilitator" required>
+            <!--Placeholder where an error message can be written to if necessary-->
             <p><span id="facilitatorNameError"></span></p>
+            <!--A fieldset is defined with checkboxes for users to select thier favorite type(s) of cuisine-->
             <fieldset>
                 <legend>Select your favorite cuisine(s):</legend>
                 <input type="checkbox" name="cbCuisine1" value="american"> American <br/>
@@ -33,12 +43,14 @@
                 <input type="checkbox" name="cbCuisine8" value="chinese"> Chinese <br/>
                 <input type="checkbox" name="cbCuisine9" value="italian"> Italian
             </fieldset>
+            <!--A fieldset is defined with radio buttons for users to select thier preferred meal preparation method-->
             <fieldset>
                 <legend>Select your preferred meal preparation method:</legend>
                 <input type="radio" name="prepButton" value="home-cooked"> Home-cooked <br/>
                 <input type="radio" name="prepButton" value="dineout"> Restaurant Dine-in <br/>
                 <input type="radio" name="prepButton" value="radioButton3"> Restaurant Take-out
             </fieldset>
+            <!--Submit button for the form-->
             <button>Submit</button>
         </form>
     </section>
