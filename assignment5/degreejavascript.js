@@ -8,4 +8,4 @@ async function getDegrees(url) {
         );
 }
 
-document.getElementById("button").onclick = getDegrees("degrees.json");
+document.getElementById("button").onclick = getDegrees("https://atocon.github.io/metcs601-assignment5/");
