@@ -8,4 +8,4 @@ async function getDegrees(url) {
         );
 }
 
-getDegrees("degrees.json");
+document.getElementById("button").onclick = getDegrees("degrees.json");
