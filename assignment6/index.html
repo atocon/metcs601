@@ -13,7 +13,7 @@
         <h1>Alec's Pets</h1>
     
         <h2>Augie</h2>
-        <img :src="augie1" alt="A picture of my australian shepherd, Augie."/>
+        <img :src="augie1" @mouseover="augie1 - augie2" alt="A picture of my australian shepherd, Augie."/>
     
     </div>
     
@@ -21,7 +21,7 @@
         var app = new Vue ({
             el: '#app',
             data: {
-                augie1: './images/augie1.jpeg',
+                augie1: './images/augie1.PNG',
                 augie2: './images/augie2.jpeg',
                 duke1: './images/duke1.jpeg',
                 duke2: './images/duke2.jpeg'
