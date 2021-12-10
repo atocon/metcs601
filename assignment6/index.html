@@ -13,11 +13,12 @@
         <h1>Alec's Pets</h1>
     
         <h2>Augie</h2>
-        <img :src="augieHover" @mouseover="hover = true" @mouseleave="hover = false" 
+        <img :src="augieHover" @mouseover="aHover = true" @mouseleave="aHover = false" 
         alt="A picture of my Australian Shepherd, Augie."/>
 
         <h2>Duke</h2>
-        <img :src="duke1" @mouseover="duke1 = duke2" alt="A picture of my Bernese Mountain Dog, Duke."/>
+        <img :src="dukeHover" @mouseover="dHover = true" @mouseleave="dHover = false" 
+        alt="A picture of my Bernese Mountain Dog, Duke."/>
     
     </div>
     
@@ -26,10 +27,17 @@
             el: '#app',
             computed: {
                 augieHover() {
-                    if (this.hover == true) {
+                    if (this.aHover == true) {
                         return this.augie2
                     } else {
                         return this.augie1
+                    }
+                },
+                dukeHover() {
+                    if (this.dHover == true) {
+                        return this.duke2
+                    } else {
+                        return this.duke1
                     }
                 }
             },
@@ -39,7 +47,8 @@
                     augie2: './images/augie2.PNG',
                     duke1: './images/duke1.PNG',
                     duke2: './images/duke2.PNG',
-                    hover: false
+                    aHover: false,
+                    dHover: true
                 }
             },
         })
