@@ -13,7 +13,8 @@
         <h1>Alec's Pets</h1>
     
         <h2>Augie</h2>
-        <img :src="augie1" @mouseover="augie1 = augie2" @mouseleave="augie2 = augie1" alt="A picture of my Australian Shepherd, Augie."/>
+        <img :src="augieHover" @mouseover="hover = true" @mouseleave="hover = false" 
+        alt="A picture of my Australian Shepherd, Augie."/>
 
         <h2>Duke</h2>
         <img :src="duke1" @mouseover="duke1 = duke2" alt="A picture of my Bernese Mountain Dog, Duke."/>
@@ -23,12 +24,24 @@
     <script>
         var app = new Vue ({
             el: '#app',
-            data: {
-                augie1: './images/augie1.PNG',
-                augie2: './images/augie2.PNG',
-                duke1: './images/duke1.PNG',
-                duke2: './images/duke2.PNG'
-            }
+            computed: {
+                augieHover() {
+                    if (this.hover == true) {
+                        return this.augie2
+                    } else {
+                        return this.augie1
+                    }
+                }
+            },
+            data () {
+                return {
+                    augie1: './images/augie1.PNG',
+                    augie2: './images/augie2.PNG',
+                    duke1: './images/duke1.PNG',
+                    duke2: './images/duke2.PNG',
+                    hover: false
+                }
+            },
         })
     </script>
 </body>
