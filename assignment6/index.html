@@ -13,7 +13,7 @@
         <h1>Alec's Pets</h1>
     
         <h2>Augie</h2>
-        <img :src="augie1" @mouseover="augie1 = augie2" alt="A picture of my Australian Shepherd, Augie."/>
+        <img :src="augie1" @mouseover="augie1 = augie2" @mouseleave="augie2 = augie1" alt="A picture of my Australian Shepherd, Augie."/>
 
         <h2>Duke</h2>
         <img :src="duke1" @mouseover="duke1 = duke2" alt="A picture of my Bernese Mountain Dog, Duke."/>
