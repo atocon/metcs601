@@ -27,7 +27,12 @@ body{
     color: var(--baby-powder);
 }
 
-.headerContainer {
+header{
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+.navContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,20 +41,16 @@ body{
     gap: 1rem;
     background-color: var(--pantone);
     margin: 0rem;
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 2rem 0rem 0rem 0rem;
 }
-nav {
-    margin: 0rem;
-    padding:0rem;
-    vertical-align: bottom;
-}
+
 nav>a {
     font-size: 1.5rem;
     color: black;
     background-color: var(--pantone);
     text-decoration: none;
     margin: 0rem;
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 0rem 1rem 0.5rem 1rem;
 }
 #homeNav {
     font-family: cyberpunk;
