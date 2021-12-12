@@ -254,3 +254,35 @@ td {
     padding: 0rem;
     list-style-position: inside;
 }
+
+.computerContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 2rem 3rem 3rem 03rem;
+    padding: 0rem;
+}
+
+.computerContainer>h3 {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.computerContainer>p {
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0rem;
+}
+
+.computerContainer>ul {
+    margin: 0rem;
+    padding: 0rem;
+    list-style-position: inside;
+}
+
+#computerImage {
+    height: auto;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
