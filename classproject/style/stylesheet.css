@@ -111,6 +111,17 @@ nav>a {
     padding: 0rem;
 }
 
+.polygon {
+    background: var(--pantone);
+    clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
+}
+
+.clipped {
+    clip-path: polygon(1% 1%, 81% 1%, 99% 19%, 99% 99%, 19% 99%, 1% 81%);
+    border: 0rem solid var(--pantone);
+}
+
+
 .containerAboutMe {
     display: flex;
     flex-direction: row;
@@ -134,8 +145,6 @@ nav>a {
 #alecAF {
     max-width: 30rem;
     height: auto;
-    clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
-    border: 0.10rem solid var(--pantone);
 }
 
 .hobbyContainer {
