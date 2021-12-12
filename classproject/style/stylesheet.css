@@ -1,0 +1,80 @@
+@font-face {
+    src: url(../fonts/Cyberpunk.ttf);
+    font-family: cyberpunk;
+}
+@font-face {
+    src: url(../fonts/Tomorrow-Regular.ttf);
+    font-family: tomorrow;
+}
+
+:root {
+    /* CSS HEX */
+    --pantone: #F3E600;
+    --davys-grey: #565554;
+    --blue-ncs: #2e86ab; 
+    --baby-powder: #fafdf6;
+    --black: #000000;
+    --platinum: #eaebed;
+    --ruby-red: #a30015;
+}
+
+body{
+    font-family: tomorrow;
+    font-size: 1.25rem;
+    margin: 0rem;
+    padding: 0rem;
+    background-color:var(--black);
+    color: var(--baby-powder);
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 1rem;
+    background-color: var(--pantone);
+    margin: 0rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+nav {
+    margin: 0rem;
+    padding:0rem;
+    vertical-align: bottom;
+}
+nav>a {
+    font-size: 1.5rem;
+    color: black;
+    background-color: var(--pantone);
+    text-decoration: none;
+    margin: 0rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+#homeNav {
+    font-family: cyberpunk;
+    font-size: 3rem;
+    color: var(--black);
+    text-shadow: 0.10rem 0.10rem var(--blue-ncs);
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+h1 {
+    font-size: 5rem;
+    font-family: cyberpunk;
+    color: var(--pantone);
+    text-shadow: 0.15rem 0.15rem var(--blue-ncs);
+    
+}
+#alecIndex {
+    max-width: 40rem;
+    height: auto;
+    margin: 0rem 0rem 0rem 0rem;
+}
