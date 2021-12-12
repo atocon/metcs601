@@ -11,11 +11,12 @@
     /* CSS HEX */
     --pantone: #F3E600;
     --davys-grey: #565554;
-    --blue-ncs: #2e86ab; 
     --baby-powder: #fafdf6;
     --black: #000000;
     --platinum: #eaebed;
     --ruby-red: #a30015;
+    --blue-jeans: #35a7ff;
+    --blue-ncs: #118ab2;
 }
 
 body{
@@ -41,13 +42,19 @@ h2{
     font-size: 3rem;
     font-family: tomorrow;
     color:var(--pantone);
-    margin: 0rem 0rem 0rem 2rem;
+    margin: 0rem 0rem 0rem 3rem;
     padding: 0rem;
 }
 
 h3 {
     font-size: 2rem;
+    color: var(--blue-jeans);
+}
 
+h4 {
+    font-size: 1.25rem;
+    color: var(--baby-powder);
+    text-transform: uppercase;
 }
 
 p {
@@ -95,7 +102,7 @@ nav>a {
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin: 0rem 2rem 0rem 2rem;
+    margin: 0rem 3rem 0rem 3rem;
     padding: 0rem;
 }
 
@@ -112,6 +119,8 @@ nav>a {
 }
 
 .polygon {
+    margin: 0rem;
+    padding: 0rem;
     background: var(--pantone);
     clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
 }
@@ -122,23 +131,23 @@ nav>a {
 }
 
 
-.containerAboutMe {
+.aboutMeContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 10rem 2rem 0rem 2rem;
+    margin: 10rem 3rem 0rem 3rem;
     padding: 0rem;
 }
 
-.containerAboutMe>h2 {
+.aboutMeContainer>h2 {
     flex-basis: 100%;
-    margin: 0rem 0rem 2rem 2rem;
+    margin: 0rem 0rem 2rem 0rem;
     padding: 0rem;
 }
 
-.containerAboutMe>p {
+.aboutMeContainer>p {
     flex-basis: 65rem;
 }
 
@@ -148,9 +157,84 @@ nav>a {
 }
 
 .hobbyContainer {
+    margin: 10rem 0rem 0rem 0rem;
+    padding: 0rem;
+}
+
+.hobbyContainer>h2 {
+    margin: 0rem 0rem 3rem 3rem;
+    padding: 0rem;
+}
+
+.cookingContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0rem 5rem;
+    margin: 2rem 3rem 0rem 3rem;
+    padding: 0rem;
+}
+
+.cookingContainer>h3 {
+    flex-basis: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem;
+}
+
+.cookingContainer>p {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 0rem;
+}
+
+.cookingContainer>h4 {
+    flex-basis: 100%;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0rem;
+}
+
+.cookingContainer>ol {
+    margin: 0rem;
+    padding: 0rem;
+    list-style-position: inside;
+}
+
+ol>li {
+    margin: 0rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+#paella{
+    height: auto;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0rem;
+    padding: 0rem;
+}
+th {
+    text-align: left;
+    table-layout: fixed;
+    border-collapse: collapse;
+    color: var(--pantone);
+    border: 1px solid var(--davys-grey);
+}
+td {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid var(--davys-grey);
+}
+
+.movieContainer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 10rem 2rem 0rem 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 2rem 2rem 0rem 2rem;
     padding: 0rem;
 }
