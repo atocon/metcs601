@@ -389,7 +389,7 @@ td {
     flex-direction: column;
     justify-content: flex-start;
     margin: 0rem 3rem 3rem 3rem;
-    padding: 0rem 0rem 0rem 0rem;
+    padding: 0rem;
 }
 
 .formContainer>h2{
@@ -405,8 +405,8 @@ td {
 }
 
 .formContainer p {
-    margin: 0rem 0rem 0rem 0rem;
-    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 .formContainer input {
@@ -436,4 +436,44 @@ td {
     max-width: 10rem;
     margin: 2rem 0rem 0rem 0rem;
     padding: 0rem 0rem 0rem 0rem;
+}
+
+#app {
+    margin: 10rem 3rem 3rem 3rem;
+    padding: 0rem;
+}
+
+#app h2 {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.petsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.petsContainer h3{
+    width: 100%;
+}
+
+.petBox div {
+    flex-basis: 50%;
+}
+
+.petsContainer figure{
+    max-width: 37.5rem;
+    height: auto;
+}
+
+.petBox img{
+    max-width: 37.5rem;
+    height: auto;
+}
+
+.petBox figcaption {
+    flex-basis: 15rem;
+    text-align: center;
 }
