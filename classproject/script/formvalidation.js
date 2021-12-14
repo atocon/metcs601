@@ -90,4 +90,5 @@ document.getElementById("contactForm").addEventListener("submit", e => {
         document.getElementById("message").style.borderColor = "blue";
         document.getElementById("messageError").innerHTML = "";
     }
+
 });

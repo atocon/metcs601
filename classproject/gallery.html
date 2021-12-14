@@ -30,24 +30,35 @@
             <section class="petsContainer">
 
                 <h3>Pets</h3>
+
+                <h4>click on each image for more!</h4>
                 
                 <div class="petBox">
                     
                     <figure class="polygon">
-                    <img :src="augieHover" class="clipped" @mouseover="aHover = true" @mouseleave="aHover = false" 
+                    <img :src="augieHover" class="clipped" v-on:click="aShow=!aShow" @mouseover="aHover = true" @mouseleave="aHover = false" 
                     alt="A picture of my Australian Shepherd, Augie."/>
                     </figure>
-                    <figcaption>My Australian Shepherd, Augie!</figcaption>
+                    <transition name="fade">
+                        <figcaption v-if="aShow">
+                            My Australian Shepherd, Augie!
+                        <figcaption>
+                    </transition>
+                    
                     
                 </div>
                 
                 <div class="petBox">
                     
                     <figure class="polygon">
-                        <img :src="dukeHover" class="clipped" @mouseover="dHover = true" @mouseleave="dHover = false" 
+                        <img :src="dukeHover" class="clipped" v-on:click="dShow=!dShow" @mouseover="dHover = true" @mouseleave="dHover = false" 
                         alt="A picture of my Bernese Mountain Dog, Duke."/>
                     </figure>
-                    <figcaption>My Bernese Mountain dog, Duke!</figcaption>
+                    <transition name="fade">
+                        <figcaption v-if="dShow">
+                            My Bernese Mountain dog, Duke!
+                        <figcaption>
+                    </transition>
                     
                 </div>
                 
@@ -76,12 +87,17 @@
             },
             data () {
                 return {
+                    // Images of my dog Duke are assigned as properties.
                     augie1: './images/augie1.PNG',
                     augie2: './images/augie2.PNG',
                     duke1: './images/duke1.PNG',
                     duke2: './images/duke2.PNG',
+                    // Boolean value to be changed when hovering occurs.
                     aHover: false,
-                    dHover: true
+                    dHover: true,
+                    // Boolean value to be changes when clicking occurs.
+                    aShow: false,
+                    dShow: false
                 }
             },
         })

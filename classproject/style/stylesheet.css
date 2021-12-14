@@ -457,6 +457,14 @@ td {
 
 .petsContainer h3{
     width: 100%;
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 0rem;
+}
+
+.petsContainer h4{
+    width: 100%;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0rem;
 }
 
 .petBox div {
@@ -471,9 +479,32 @@ td {
 .petBox img{
     max-width: 37.5rem;
     height: auto;
+    cursor: pointer;
 }
 
 .petBox figcaption {
     flex-basis: 15rem;
     text-align: center;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 1s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.progressBar {
+    position: absolute;
+    width: 100%;
+    background-color: var(--davys-grey);
+}
+
+.progressBarInner {
+    position: relative;
+    width: 0%;
+    padding: 0rem;
+    background-color: var(--blue-jeans);
+    color: var(--baby-powder);
+    box-shadow: 0rem 0rem 1rem 0.08rem var(--blue-jeans);
 }
