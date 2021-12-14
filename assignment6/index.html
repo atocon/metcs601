@@ -8,18 +8,37 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 </head>
 <body>
+    
     <div id="app">
 
-        <h1>Alec's Pets</h1>
+        <h1>My Pets</h1>
     
         <h2>Augie</h2>
-        <img :src="augieHover" @mouseover="aHover = true" @mouseleave="aHover = false" 
+        <img :src="augieHover" v-on:click="aShow=!aShow" @mouseover="aHover = true" @mouseleave="aHover = false" 
         alt="A picture of my Australian Shepherd, Augie."/>
+        <transition name="fade">
+            <p v-if="aShow">My Australian Sheperd, Augie!</p>
+        </transition>
+
+        <img :src="augieHover2" v-on:click="a2Show=!a2Show" @mouseover="a2Hover = true" @mouseleave="a2Hover = false" 
+        alt="A picture of my Australian Shepherd, Augie."/>
+        <transition name="fade">
+            <p v-if="a2Show">More of Augie!</p>
+        </transition>
 
         <h2>Duke</h2>
-        <img :src="dukeHover" @mouseover="dHover = true" @mouseleave="dHover = false" 
+        <img :src="dukeHover" v-on:click="dShow=!dShow" @mouseover="dHover = true" @mouseleave="dHover = false" 
         alt="A picture of my Bernese Mountain Dog, Duke."/>
-    
+        <transition name="fade">
+            <p v-if="dShow">My Bernese Mountain Dog, Duke!</p>
+        </transition>
+
+        <img :src="dukeHover2" v-on:click="d2Show=!d2Show" @mouseover="d2Hover = true" @mouseleave="d2Hover = false" 
+        alt="A picture of my Bernese Mountain Dog, Duke."/>
+        <transition name="fade">
+            <p v-if="d2Show">More of Duke!</p>
+        </transition>
+
     </div>
     
     <script>
@@ -33,11 +52,25 @@
                         return this.augie1
                     }
                 },
+                augieHover2() {
+                    if (this.a2Hover == true) {
+                        return this.augie3
+                    } else {
+                        return this.augie4
+                    }
+                },
                 dukeHover() {
                     if (this.dHover == true) {
                         return this.duke2
                     } else {
                         return this.duke1
+                    }
+                },
+                dukeHover2() {
+                    if (this.d2Hover == true) {
+                        return this.duke3
+                    } else {
+                        return this.duke4
                     }
                 }
             },
@@ -45,13 +78,77 @@
                 return {
                     augie1: './images/augie1.PNG',
                     augie2: './images/augie2.PNG',
+                    augie3: './images/augie3.PNG',
+                    augie4: './images/augie4.PNG',
+
                     duke1: './images/duke1.PNG',
                     duke2: './images/duke2.PNG',
+                    duke3: './images/duke3.PNG',
+                    duke4: './images/duke4.PNG',
+
                     aHover: false,
-                    dHover: true
+                    a2Hover: false,
+                    dHover: false,
+                    d2Hover: false,
+
+                    aShow: false,
+                    a2Show: false,
+                    dShow: false,
+                    d2Show: false
                 }
             },
         })
     </script>
+<style>
+
+    :root {
+        --jet: #363636ff;
+        --gunmetal: #242f40ff;
+        --satin-sheen-gold: #cca43bff;
+        --platinum: #e5e5e5ff;
+        --white: #ffffffff;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.25rem;
+        background-color: var(--platinum);
+        margin: 4rem;
+        padding: 0rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+        color: var(--satin-sheen-gold);
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: var(--gunmetal);
+    }
+
+    p {
+        color: var(--jet);
+    }
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity 1s;
+    }
+    .fade-enter, .fade-leave-to {
+        opacity: 0;
+    }
+
+    #app {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #app img {
+        max-width: 50rem;
+        margin: 2rem 0rem 2rem 0rem;
+    }
+
+</style>
+
 </body>
 </html>
