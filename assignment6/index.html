@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 </head>
 <body>
-    
     <div id="app">
 
         <h1>My Pets</h1>
@@ -42,13 +41,21 @@
     </div>
     
     <script>
+        // Load a new Vue page.
         var app = new Vue ({
+            // Focusing on the app element.
             el: '#app',
+            // Cpmuted functions.
             computed: {
+                // Shows a different image when the user hover cursor over the image box.
                 augieHover() {
+                    // If statement executes if hovering is taking place.
                     if (this.aHover == true) {
+                        // Replaces src with augie2 image.
                         return this.augie2
+                        // Otherwise this else statement executes.
                     } else {
+                        // Replaces src with augie1 image.
                         return this.augie1
                     }
                 },
@@ -74,23 +81,25 @@
                     }
                 }
             },
+            // Holder for all the data to be assigned as properties.
             data () {
                 return {
+                    // Images of my dog Augie are assigned as properties.
                     augie1: './images/augie1.PNG',
                     augie2: './images/augie2.PNG',
                     augie3: './images/augie3.PNG',
                     augie4: './images/augie4.PNG',
-
+                    // Images of my dog Duke are assigned as properties.
                     duke1: './images/duke1.PNG',
                     duke2: './images/duke2.PNG',
                     duke3: './images/duke3.PNG',
                     duke4: './images/duke4.PNG',
-
+                    // Boolean value to be changed when hovering occurs.
                     aHover: false,
                     a2Hover: false,
                     dHover: false,
                     d2Hover: false,
-
+                    // Boolean value to be changes when clicking occurs.
                     aShow: false,
                     a2Show: false,
                     dShow: false,
@@ -99,56 +108,56 @@
             },
         })
     </script>
-<style>
 
-    :root {
-        --jet: #363636ff;
-        --gunmetal: #242f40ff;
-        --satin-sheen-gold: #cca43bff;
-        --platinum: #e5e5e5ff;
-        --white: #ffffffff;
-    }
+    <style>
 
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.25rem;
-        background-color: var(--platinum);
-        margin: 4rem;
-        padding: 0rem;
-    }
+        :root {
+            --jet: #363636ff;
+            --gunmetal: #242f40ff;
+            --satin-sheen-gold: #cca43bff;
+            --platinum: #e5e5e5ff;
+            --white: #ffffffff;
+        }
 
-    h1 {
-        font-size: 5rem;
-        color: var(--satin-sheen-gold);
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.25rem;
+            background-color: var(--platinum);
+            margin: 4rem;
+            padding: 0rem;
+        }
 
-    h2 {
-        font-size: 2rem;
-        color: var(--gunmetal);
-    }
+        h1 {
+            font-size: 5rem;
+            color: var(--satin-sheen-gold);
+        }
 
-    p {
-        color: var(--jet);
-    }
+        h2 {
+            font-size: 2rem;
+            color: var(--gunmetal);
+        }
 
-    .fade-enter-active, .fade-leave-active {
-        transition: opacity 1s;
-    }
-    .fade-enter, .fade-leave-to {
-        opacity: 0;
-    }
+        p {
+            color: var(--jet);
+        }
 
-    #app {
-        display: flex;
-        flex-direction: column;
-    }
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 1s;
+        }
+        .fade-enter, .fade-leave-to {
+            opacity: 0;
+        }
 
-    #app img {
-        max-width: 50rem;
-        margin: 2rem 0rem 2rem 0rem;
-    }
+        #app {
+            display: flex;
+            flex-direction: column;
+        }
 
-</style>
+        #app img {
+            max-width: 50rem;
+            margin: 2rem 0rem 2rem 0rem;
+        }
 
+    </style>
 </body>
 </html>
