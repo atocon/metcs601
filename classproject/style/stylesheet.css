@@ -2,6 +2,7 @@
     src: url(../fonts/Cyberpunk.ttf);
     font-family: cyberpunk;
 }
+
 @font-face {
     src: url(../fonts/Tomorrow-Regular.ttf);
     font-family: tomorrow;
@@ -144,7 +145,6 @@ nav>a {
     border: 0rem solid var(--pantone);
 }
 
-
 .aboutMeContainer {
     display: flex;
     flex-direction: row;
@@ -230,6 +230,7 @@ table {
     margin: 0rem;
     padding: 0rem;
 }
+
 th {
     text-align: left;
     table-layout: fixed;
@@ -237,6 +238,7 @@ th {
     color: var(--pantone);
     border: 1px solid var(--davys-grey);
 }
+
 td {
     table-layout: fixed;
     border-collapse: collapse;
@@ -488,6 +490,7 @@ td {
 .fade-enter-active, .fade-leave-active {
     transition: opacity 1s;
 }
+
 .fade-enter, .fade-leave-to {
     opacity: 0;
 }
@@ -513,10 +516,12 @@ td {
 
 /*Media Query 1*/
 @media (max-width: 946px) {
+
     @font-face {
         src: url(../fonts/Cyberpunk.ttf);
         font-family: cyberpunk;
     }
+
     @font-face {
         src: url(../fonts/Tomorrow-Regular.ttf);
         font-family: tomorrow;
@@ -659,7 +664,6 @@ td {
         border: 0rem solid var(--pantone);
     }
     
-    
     .aboutMeContainer {
         display: flex;
         flex-direction: row;
@@ -746,6 +750,7 @@ td {
         margin: 0rem;
         padding: 0rem;
     }
+
     th {
         text-align: left;
         table-layout: fixed;
@@ -753,6 +758,7 @@ td {
         color: var(--pantone);
         border: 1px solid var(--davys-grey);
     }
+    
     td {
         table-layout: fixed;
         border-collapse: collapse;
@@ -1006,6 +1012,7 @@ td {
     .fade-enter-active, .fade-leave-active {
         transition: opacity 1s;
     }
+
     .fade-enter, .fade-leave-to {
         opacity: 0;
     }
@@ -1030,25 +1037,14 @@ td {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Media Query 2*/
 @media (max-width: 689px) {
+
     @font-face {
         src: url(../fonts/Cyberpunk.ttf);
         font-family: cyberpunk;
     }
+
     @font-face {
         src: url(../fonts/Tomorrow-Regular.ttf);
         font-family: tomorrow;
@@ -1191,7 +1187,6 @@ td {
         border: 0rem solid var(--pantone);
     }
     
-    
     .aboutMeContainer {
         display: flex;
         flex-direction: row;
@@ -1278,6 +1273,7 @@ td {
         margin: 1rem 0rem 0rem 0rem;
         padding: 0rem;
     }
+
     th {
         text-align: left;
         table-layout: fixed;
@@ -1285,6 +1281,7 @@ td {
         color: var(--pantone);
         border: 1px solid var(--davys-grey);
     }
+
     td {
         table-layout: fixed;
         border-collapse: collapse;
@@ -1539,6 +1536,7 @@ td {
     .fade-enter-active, .fade-leave-active {
         transition: opacity 1s;
     }
+
     .fade-enter, .fade-leave-to {
         opacity: 0;
     }
@@ -1563,21 +1561,15 @@ td {
 
 
 
-
-
-
-
-
-
-
-
-
 /*Media Query 3*/
+
 @media (max-width: 502px) {
+
     @font-face {
         src: url(../fonts/Cyberpunk.ttf);
         font-family: cyberpunk;
     }
+
     @font-face {
         src: url(../fonts/Tomorrow-Regular.ttf);
         font-family: tomorrow;
@@ -1720,7 +1712,6 @@ td {
         border: 0rem solid var(--pantone);
     }
     
-    
     .aboutMeContainer {
         display: flex;
         flex-direction: row;
@@ -1810,6 +1801,7 @@ td {
         margin: 1rem 0rem 0rem 0rem;
         padding: 0rem;
     }
+
     th {
         text-align: left;
         table-layout: fixed;
@@ -1817,6 +1809,7 @@ td {
         color: var(--pantone);
         border: 1px solid var(--davys-grey);
     }
+
     td {
         table-layout: fixed;
         border-collapse: collapse;
@@ -2076,6 +2069,7 @@ td {
     .fade-enter-active, .fade-leave-active {
         transition: opacity 1s;
     }
+
     .fade-enter, .fade-leave-to {
         opacity: 0;
     }
